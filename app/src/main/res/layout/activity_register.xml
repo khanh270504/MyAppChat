@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="@dimen/_24sdp"
+    android:scrollbars="none"
+    android:gravity="center"
+    tools:context=".activities.RegisterActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      android:paddingBottom="80dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="Đăng ký tài khoản AppChat"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/logo"
+        android:contentDescription="Ảnh đại diện người dùng"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:focusable="true"
+        app:riv_corner_radius="60dp"
+        app:riv_oval="true"
+        app:riv_border_color="@color/primary"
+        app:riv_border_width="2dp" />
+
+    <EditText
+        android:id="@+id/inputFullName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:hint="Nhập Họ và tên"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_13ssp" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:hint="Nhập Email"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_13ssp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:hint="Nhập Mật khẩu"
+        android:inputType="textPassword"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_13ssp" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_13ssp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Đăng ký"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/primary" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Đã có tài khoản? Đăng nhập"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="center" />
+  </LinearLayout>
+</ScrollView>
